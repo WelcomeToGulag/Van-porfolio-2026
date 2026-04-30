@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Van Chester Ridual portfolio featuring Flutter apps, Python automation, HTML, CSS, JavaScript, Firebase, AdMob, Play Store publishing, dashboards, and interactive web projects."
+  />
+
+  <title>VCR Portfolio | Flutter, Python & Web Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <canvas id="starCanvas" aria-hidden="true"></canvas>
+  <div class="scanline" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="#home" class="brand">
+      <span class="brand-mark">V</span>
+
+      <span>
+        <strong>VCR.dev</strong>
+        <small>Flutter • Python • Web</small>
+      </span>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#work">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="sound-toggle" id="soundToggle" type="button">
+      SFX: OFF
+    </button>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section class="hero section" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Flutter • Python • HTML • CSS • JavaScript</p>
+
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            Available for app, web, and automation projects
+          </div>
+
+          <h1>
+            Hi, I’m
+            <span class="gradient-text">Van Chester Ridual</span>
+          </h1>
+
+          <h2 class="typing-heading">
+            I build
+            <span id="typingText"></span>
+            <span class="typing-cursor">|</span>
+          </h2>
+
+          <p class="hero-text">
+            I build mobile apps, web dashboards, landing pages, automation tools,
+            and interactive front-end experiences using Flutter, Python, HTML,
+            CSS, JavaScript, Firebase, AdMob, and modern development workflows.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#work">View My Work</a>
+
+            <button class="btn ghost" id="openResumeBtn" type="button">
+              Open Resume
+            </button>
+          </div>
+
+          <div class="hero-social-mini">
+            <a href="https://www.facebook.com/van.chester.ridual.2024/" target="_blank" rel="noreferrer">
+              Facebook
+            </a>
+
+            <a href="https://www.instagram.com/vanchesterridual?igsh=YXFxdXk3MXJuNzV1" target="_blank" rel="noreferrer">
+              Instagram
+            </a>
+
+            <a href="https://x.com/IamChestersy" target="_blank" rel="noreferrer">
+              X
+            </a>
+
+            <a href="mailto:vridual11@gmail.com">
+              Gmail
+            </a>
+          </div>
+
+          <div class="stats">
+            <article>
+              <strong>Flutter</strong>
+              <span>Play Store Apps</span>
+            </article>
+
+            <article>
+              <strong>Python</strong>
+              <span>Automation Scripts</span>
+            </article>
+
+            <article>
+              <strong>Web</strong>
+              <span>HTML CSS JS</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hologram-card" id="hologramCard">
+            <div class="hero-terminal">
+              <div class="terminal-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="terminal-body">
+                <p><b>VCR Developer System</b></p>
+                <p class="terminal-line">$ flutter build appbundle</p>
+                <p class="terminal-success">✓ Farm Paradise built with Flutter</p>
+                <p class="terminal-success">✓ Firebase Email Authentication connected</p>
+                <p class="terminal-success">✓ AdMob monetization integrated</p>
+                <p class="terminal-success">✓ Published on Google Play Store</p>
+              </div>
+            </div>
+
+            <div class="wire-orb">
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <div class="orb-core"></div>
+            </div>
+
+            <div class="holo-panel">
+              <p>LIVE DEVELOPER STACK</p>
+
+              <h2>Flutter • Python • Web</h2>
+
+              <div class="code-lines">
+                <i style="--w: 92%"></i>
+                <i style="--w: 64%"></i>
+                <i style="--w: 78%"></i>
+                <i style="--w: 50%"></i>
+              </div>
+            </div>
+
+            <div class="floating-tag tag-one">Flutter</div>
+            <div class="floating-tag tag-two">Python</div>
+            <div class="floating-tag tag-three">JS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee-section" aria-label="Technology list">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Flutter</span>
+          <span>Dart</span>
+          <span>Python</span>
+          <span>Firebase</span>
+          <span>Email Auth</span>
+          <span>AdMob</span>
+          <span>Play Store</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+
+          <span>Flutter</span>
+          <span>Dart</span>
+          <span>Python</span>
+          <span>Firebase</span>
+          <span>Email Auth</span>
+          <span>AdMob</span>
+          <span>Play Store</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS -->
+    <section class="section work" id="work">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Featured Projects</p>
+
+        <h2>App, Image, and Video Showcase</h2>
+
+        <p>
+          A professional showcase of mobile app development, admin dashboards,
+          landing pages, and video previews using the exact assets provided.
+        </p>
+      </div>
+
+      <!-- MAIN PROJECT -->
+      <div class="featured-app reveal">
+        <div class="featured-app-copy">
+          <span class="project-badge">Published Flutter App</span>
+
+          <h3>Farm Paradise</h3>
+
+          <p>
+            Farm Paradise is a mobile app that I built and published on the
+            Google Play Store using Flutter. The project includes Firebase Email
+            Authentication, AdMob monetization, app publishing workflow, and a
+            connected admin dashboard for withdrawal and request management.
+          </p>
+
+          <div class="tech-pills">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Firebase</span>
+            <span>Email Auth</span>
+            <span>AdMob</span>
+            <span>Play Store</span>
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.heyjoegaming.f_paradise&pcampaignid=web_share"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View on Play Store
+            </a>
+
+            <a
+              href="https://farmparadise.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Admin Website
+            </a>
+          </div>
+        </div>
+
+        <div class="featured-app-media">
+          <video
+            src="assets/videos/farmparadise.mp4"
+            muted
+            loop
+            playsinline
+            controls
+            preload="metadata"
+          ></video>
+        </div>
+      </div>
+
+      <!-- IMAGE SHOWCASE -->
+      <div class="showcase-label reveal">
+        <span>01</span>
+        <h3>Image Showcase</h3>
+      </div>
+
+      <div class="project-grid image-grid">
+        <article class="project-card reveal tilt-card">
+          <div class="project-media image-only">
+            <img
+              src="assets/images/farm-dashboard.png"
+              alt="Farm Paradise dashboard preview"
+            />
+          </div>
+
+          <div class="project-content">
+            <div>
+              <span class="project-badge">Admin Dashboard</span>
+
+              <h3>Farm Paradise Dashboard</h3>
+
+              <p>
+                Web dashboard interface for withdrawal tracking, user request
+                records, pending status, paid status, GCASH records, and admin
+                management controls.
+              </p>
+
+              <div class="mini-tags">
+                <span>Dashboard</span>
+                <span>Admin UI</span>
+                <span>Firebase Ready</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://farmparadise.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Site
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card">
+          <div class="project-media image-only">
+            <img
+              src="assets/images/farm-login.png"
+              alt="Farm Paradise login page preview"
+            />
+          </div>
+
+          <div class="project-content">
+            <div>
+              <span class="project-badge">Authentication UI</span>
+
+              <h3>Farm Paradise Login</h3>
+
+              <p>
+                Login interface connected to the Farm Paradise system, designed
+                for clean access flow and consistent brand presentation.
+              </p>
+
+              <div class="mini-tags">
+                <span>Login UI</span>
+                <span>Email Auth</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://farmparadise.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Site
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card">
+          <div class="project-media image-only">
+            <img
+              src="assets/images/eyekandi-hero.png"
+              alt="Eyekandi agency landing page preview"
+            />
+          </div>
+
+          <div class="project-content">
+            <div>
+              <span class="project-badge">Landing Page</span>
+
+              <h3>Eyekandi Agency Website</h3>
+
+              <p>
+                Creator recruitment landing page with premium dark visuals,
+                conversion-focused layout, responsive structure, and strong
+                online brand presentation.
+              </p>
+
+              <div class="mini-tags">
+                <span>Landing Page</span>
+                <span>Responsive</span>
+                <span>UI Design</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://eyekandi.lovable.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Site
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- VIDEO SHOWCASE -->
+      <div class="showcase-label reveal">
+        <span>02</span>
+        <h3>Video Showcase</h3>
+      </div>
+
+      <div class="project-grid video-grid">
+        <article class="project-card reveal tilt-card video-card">
+          <div class="project-media video-only">
+            <video
+              src="assets/videos/farmparadise.mp4"
+              muted
+              loop
+              playsinline
+              controls
+              preload="metadata"
+            ></video>
+          </div>
+
+          <div class="project-content">
+            <div>
+              <span class="project-badge">Flutter App Demo</span>
+
+              <h3>Farm Paradise Video Preview</h3>
+
+              <p>
+                Video preview for the Farm Paradise mobile app built with Flutter
+                and published on Google Play with Firebase and AdMob integration.
+              </p>
+
+              <div class="mini-tags">
+                <span>Flutter</span>
+                <span>AdMob</span>
+                <span>Play Store</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.heyjoegaming.f_paradise&pcampaignid=web_share"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View App
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card video-card">
+          <div class="project-media video-only">
+            <video
+              src="assets/videos/instagram-caption-farming.mp4"
+              muted
+              loop
+              playsinline
+              controls
+              preload="metadata"
+            ></video>
+          </div>
+
+          <div class="project-content">
+            <div>
+              <span class="project-badge">Social Video</span>
+
+              <h3>Instagram Farming Caption Content Automation for Multiple accounts</h3>
+
+              <p>
+                Short-form promotional video content for farming-relatedsoc instagram
+                campaigns, caption marketing, and visual storytelling.
+              </p>
+
+              <div class="mini-tags">
+                <span>Content</span>
+                <span>Marketing</span>
+                <span>Short Form</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card video-card">
+          <div class="project-media video-only">
+            <video
+              src="assets/videos/oddjob.mp4"
+              muted
+              loop
+              playsinline
+              controls
+              preload="metadata"
+            ></video>
+          </div>
+
+          <div class="project-content">
+            <div>
+              <span class="project-badge">App Concept</span>
+
+              <h3>OddJob App Preview</h3>
+
+              <p>
+                App-related preview focused on service listings, job proposals,
+                mobile UI flow, community services, and digital marketplace
+                presentation.
+              </p>
+
+              <div class="mini-tags">
+                <span>App UI</span>
+                <span>Marketplace</span>
+                <span>Mobile Flow</span>
+              </div>
+            </div>
+
+            <div class="project-links">
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Developer Stack</p>
+
+        <h2>Skills and Tools</h2>
+      </div>
+
+      <div class="skill-grid">
+        <article class="skill-card reveal">
+          <span>01</span>
+
+          <h3>Flutter App Development</h3>
+
+          <p>
+            Mobile app development using Flutter and Dart, Firebase integration,
+            Email Authentication, AdMob monetization, and Play Store publishing.
+          </p>
+        </article>
+
+        <article class="skill-card reveal">
+          <span>02</span>
+
+          <h3>Python Automation</h3>
+
+          <p>
+            Python scripting for automation workflows, content support,
+            development utilities, testing flows, and task-based productivity tools.
+          </p>
+        </article>
+
+        <article class="skill-card reveal">
+          <span>03</span>
+
+          <h3>Web Development</h3>
+
+          <p>
+            HTML, CSS, and JavaScript development for responsive websites,
+            dashboards, landing pages, interactive UI, and portfolio systems.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section class="section resume-section" id="resume">
+      <div class="resume-card reveal">
+        <div>
+          <p class="eyebrow">Resume Holder</p>
+
+          <h2>View or download my resume anytime.</h2>
+        </div>
+
+        <button class="btn primary" id="openResumeBtn2" type="button">
+          Open Resume Holder
+        </button>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <div>
+          <p class="eyebrow">Contact</p>
+
+          <h2>Connect with Van Chester Ridual</h2>
+
+          <p>
+            Reach me through Facebook, Instagram, X, or Gmail.
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a
+            class="social-link"
+            href="https://www.facebook.com/van.chester.ridual.2024/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Facebook profile"
+          >
+            <span>f</span>
+            Facebook
+          </a>
+
+          <a
+            class="social-link"
+            href="https://www.instagram.com/vanchesterridual?igsh=YXFxdXk3MXJuNzV1"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram profile"
+          >
+            <span>◎</span>
+            Instagram
+          </a>
+
+          <a
+            class="social-link"
+            href="https://x.com/IamChestersy"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="X profile"
+          >
+            <span>𝕏</span>
+            X
+          </a>
+
+          <a
+            class="social-link"
+            href="mailto:vridual11@gmail.com"
+            aria-label="Send email"
+          >
+            <span>@</span>
+            Gmail
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RESUME MODAL -->
+  <div class="resume-modal" id="resumeModal" aria-hidden="true">
+    <div class="resume-backdrop" data-close-resume></div>
+
+    <div class="resume-window">
+      <button class="close-modal" type="button" data-close-resume>
+        ×
+      </button>
+
+      <div class="resume-icon">📄</div>
+
+      <h2>Resume Holder</h2>
+
+      <p>Your resume file:</p>
+
+      <code>assets/resume/VAN-RESUME.pdf</code>
+
+      <div class="resume-actions">
+        <a class="btn primary" href="assets/resume/VAN-RESUME.pdf" target="_blank">
+          View Resume
+        </a>
+
+        <a class="btn ghost" href="assets/resume/VAN-RESUME.pdf" download>
+          Download Resume
+        </a>
+      </div>
+
+      <small>
+        Put your PDF inside assets/resume/ and name it VAN-RESUME.pdf.
+      </small>
+    </div>
+  </div>
+
+  <button class="back-top" id="backTop" type="button" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
